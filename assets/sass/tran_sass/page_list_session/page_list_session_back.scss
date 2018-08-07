@@ -1,0 +1,58 @@
+.list-session {
+    background-color: white;
+    width: 1511px;
+    margin: 35px auto;
+
+    &--action-file {
+        margin-bottom: 38px;
+    }
+
+    .button-action {
+        padding: 5px 70px;
+        border-radius: 35px;
+        font-family: "Jambono";
+        color: #ffffff;
+        background: #ed1e24;
+
+        .text {
+            font-size: 30px;
+        }
+
+        .icon {
+            transform: translateY((-6px));
+            margin-right: 15px;
+        }
+
+        &:nth-child(1) {
+            padding: 5px 44px;
+        }
+
+        &:nth-child(2) {
+            padding-left: 34px;
+            padding-right: 40px;
+        }
+
+        &:nth-child(3) {
+            padding-left: 55px;
+            padding-right: 80px;
+
+            .icon {
+                margin-right: 41px;
+            }
+        }
+    }
+    //end button session
+    .table {
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: #f6f6f6;
+                }
+
+                &:hover {
+                    background: #ffdf00;
+                }
+            }
+        }
+    }
+}

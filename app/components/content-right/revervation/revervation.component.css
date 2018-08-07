@@ -1,0 +1,33 @@
+.upload-file {
+  margin-top: 230px; }
+.upload-file .wrapper-content {
+  width: 311px;
+  height: 269px;
+  margin: auto; }
+.upload-file .wrapper-content .upload-file--btn-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 28px; }
+.upload-file .wrapper-content .upload-file--btn-upload .button-upload {
+  border-radius: 30px;
+  background: #ee4023;
+  width: 311px;
+  color: white;
+  font-size: 24px;
+  font-family: "Jambono";
+  color: #ffffff; }
+.upload-file .wrapper-content .upload-file--btn-upload .upload-file--input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer; }
+.upload-file .wrapper-content .suggest {
+  font-size: 13px;
+  color: #5a5a5a; }
+
+/*# sourceMappingURL=page_create_revervation.css.map */

@@ -1,0 +1,49 @@
+<div class="list-session-confirm p-5">
+  <!--buttons action-->
+  <div class="list-session--action-file d-flex justify-content-between mb-5">
+    <a routerLink="" class="btn button-action m-auto">
+      <img src="../../../../../../assets/images/Tran_images/list-session-confirm.png" class="icon" alt="clound download icon">
+      <span class="text">Confirm</span>
+    </a>
+  </div>
+  <!--End buttons action-->
+  <!--table session-->
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col" class="text-danger">ID</th>
+      <th scope="col" class="text-danger">City Pair</th>
+      <th scope="col" class="text-danger">Fare Class</th>
+      <th scope="col" class="text-danger">On Sale From</th>
+      <th scope="col" class="text-danger">On Sale To</th>
+      <th scope="col" class="text-danger">Travel From</th>
+      <th scope="col" class="text-danger">Travel To</th>
+      <th scope="col" class="text-danger">Base (VND)</th>
+      <th scope="col" class="text-danger">USD</th>
+      <th scope="col" class="text-danger">JYP</th>
+      <th scope="col" class="text-danger">KHR</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let item of datas ">
+    <tr>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.cityPair}}</td>
+      <td>{{item.fareClass}}</td>
+      <td>{{item.onSaleFrom}}</td>
+      <td>{{item.onSaleTo}}</td>
+      <td>{{item.travelFrom}}</td>
+      <td>{{item.travelTo}}</td>
+      <td>
+        <span class="number mr-2">{{item.base}}</span>
+      </td>
+      <td>{{item.usd}}</td>
+      <td>{{item.jyp}}</td>
+      <td>{{item.khr}}</td>
+    </tr>
+    </ng-container>
+
+    </tbody>
+  </table>
+  <!--end table session-->
+</div>

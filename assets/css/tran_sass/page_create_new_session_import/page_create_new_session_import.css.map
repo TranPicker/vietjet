@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EAClB,gBAAgB,EAAE,KAAK;EAEvB,kCAAe;IACX,KAAK,EAAE,MAAM;IACb,MAAM,EAAE,SAAS;EAGrB,oCAAe;IACX,OAAO,EAAE,QAAQ;IACjB,aAAa,EAAE,IAAI;IACnB,KAAK,EAAE,OAAO;IACd,UAAU,EAAE,OAAO;IACnB,WAAW,EAAE,SAAS;IAEtB,0CAAM;MACF,SAAS,EAAE,IAAI;IAGnB,0CAAM;MACF,SAAS,EAAE,gBAAkB;MAC7B,YAAY,EAAE,IAAI;EAOd,wCAAG;IACC,MAAM,EAAE,iBAAiB;EAO7B,wCAAG;IACC,WAAW,EAAE,IAAI;IACjB,MAAM,EAAE,iBAAiB;EAG7B,qDAAkB;IACd,UAAU,EAAE,OAAO;EAGvB,2CAAQ;IACJ,UAAU,EAAE,OAAO",
+"sources": ["../../../sass/tran_sass/page_create_new_session_import/page_create_new_session_import.scss"],
+"names": [],
+"file": "page_create_new_session_import.css"
+}

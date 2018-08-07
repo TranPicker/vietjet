@@ -1,0 +1,55 @@
+<nav class="sticky-top border border-light" aria-label="breadcrumb" style="background:#ffffff;">
+  <ol class="breadcrumb bg-transparent m-0 Jambono-Medium">
+    <li class="breadcrumb-item d-flex align-items-center active">
+      <a class="d-flex align-items-center" href="page_create_new_session_export.html">
+        <!--<h2 class="rounded-circle mr-1 d-flex align-items-center justify-content-center number-breadcrumb">
+            <label>1</label>
+        </h2>-->
+        <h4 class="">List Session</h4>
+      </a>
+    </li>
+  </ol>
+  <hr class="m-0" />
+</nav>
+<!-- <select class="border-0" name="" id="my-color-menu">
+    <option>Choose a color...</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+</select> -->
+<div class="list-session">
+  <!--buttons action-->
+  <div class="list-session--action-file d-flex justify-content-between">
+    <a routerLink="#" class="btn button-action"><img src="./../../../../assets/images/Tran_images/list-session-clound-icon.png" class="icon" alt="clound download icon"><span class="text">Download File Upload</span></a>
+    <a routerLink="" class="btn button-action"><img src="./../../../../assets/images/Tran_images/list-session-clound-icon.png" class="icon" alt="clound download icon"><span class="text">Download File Result</span></a>
+    <a routerLink="" class="btn button-action"><img src="./../../../../assets/images/Tran_images/list-session-watch-icon.png" class="icon" alt="clound download icon"><span class="text">00/30</span></a>
+    <a routerLink="/list-session" class="btn button-action"><img src="./../../../../assets/images/Tran_images/list-session-back-icon.png" class="icon" alt="clound download icon"><span class="text">Back</span></a>
+  </div>
+  <!--End buttons action-->
+  <!--table session-->
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col" class="text-danger">ID</th>
+      <th scope="col" class="text-danger">City Pair</th>
+      <th scope="col" class="text-danger">On Sale From</th>
+      <th scope="col" class="text-danger">On Sale To</th>
+      <th scope="col" class="text-danger">Currency</th>
+      <th scope="col" class="text-danger">Result</th>
+      <th scope="col" class="text-danger">Notes </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor="let item of datas ">
+      <th scope="row"></th>
+      <td>{{item.cityPair}}</td>
+      <td>{{item.onSaleFrom}} </td>
+      <td>{{item.onSaleTo}} </td>
+      <td>{{item.currency}} VND </td>
+      <td>{{item.result}} </td>
+      <td>{{item.notes}} </td>
+    </tr>
+    </tbody>
+  </table>
+  <!--end table session-->
+</div>

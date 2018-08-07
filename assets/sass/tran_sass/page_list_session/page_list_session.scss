@@ -1,0 +1,44 @@
+.list-session-detail {
+    background-color: white;
+
+    .table {
+        width: 100%;
+        margin: auto;
+
+        thead {
+            tr {
+                th {
+                    border: 1px solid #ecf0f6;
+                }
+            }
+        }
+
+        tbody {
+
+            tr {
+                td {
+                    font-size: 18px;
+                    border: 1px solid #ecf0f6;
+                }
+
+                .btn-active {
+                    color: #ed1e24;
+                    border: 1px solid #ed1e24;
+
+                    &:hover {
+                        color: #ffdf00;
+                        background: #ed1e24;
+                    }
+                }
+
+                &:nth-child(even) {
+                    background: #f6f6f6;
+                }
+
+                &:hover {
+                    background: #ffdf00;
+                }
+            }
+        }
+    }
+}

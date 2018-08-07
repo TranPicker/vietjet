@@ -1,0 +1,52 @@
+.list-session-confirm {
+    background-color: white;
+
+    &--action-file {
+        width: 1164px;
+        margin: 38px auto;
+    }
+
+    .button-action {
+        padding: 5px 70px;
+        border-radius: 35px;
+        color: #ffffff;
+        background: #ed1e24;
+        font-family: "Jambono";
+
+        .text {
+            font-size: 26px;
+        }
+
+        .icon {
+            transform: translateY((-6px));
+            margin-right: 15px;
+        }
+    }
+    //end button session
+    .table {
+        thead {
+            tr {
+                th {
+                    border: 1px solid #ecf0f6;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-weight: bold;
+                    border: 1px solid #ecf0f6;
+                }
+
+                &:nth-child(even) {
+                    background: #f6f6f6;
+                }
+
+                &:hover {
+                    background: #ffdf00;
+                }
+            }
+        }
+    }
+}

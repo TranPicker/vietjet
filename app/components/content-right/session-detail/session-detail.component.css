@@ -1,0 +1,33 @@
+.list-session {
+  background-color: white;
+  width: 1511px;
+  margin: 35px auto; }
+.list-session--action-file {
+  margin-bottom: 38px; }
+.list-session .button-action {
+  padding: 5px 70px;
+  border-radius: 35px;
+  font-family: "Jambono";
+  color: #ffffff;
+  background: #ed1e24; }
+.list-session .button-action .text {
+  font-size: 30px; }
+.list-session .button-action .icon {
+  transform: translateY(-6px);
+  margin-right: 15px; }
+.list-session .button-action:nth-child(1) {
+  padding: 5px 44px; }
+.list-session .button-action:nth-child(2) {
+  padding-left: 34px;
+  padding-right: 40px; }
+.list-session .button-action:nth-child(3) {
+  padding-left: 55px;
+  padding-right: 80px; }
+.list-session .button-action:nth-child(3) .icon {
+  margin-right: 41px; }
+.list-session .table tbody tr:nth-child(even) {
+  background: #f6f6f6; }
+.list-session .table tbody tr:hover {
+  background: #ffdf00; }
+
+/*# sourceMappingURL=page_list_session_back.css.map */

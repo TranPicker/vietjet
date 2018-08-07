@@ -1,0 +1,44 @@
+<!--form signin-->
+<div class="form-signin d-block">
+  <div class="logo text-center">
+    <a href="#"><img src="./../../../assets/images/Tran_images/form-sigin-logo.png" alt="logo vietjet"></a>
+    <h3 class="form-decsription">
+      <img src="./../../../assets/images/Tran_images/form-signin-introduce.png" alt="">
+    </h3>
+  </div>
+  <form class="form text-left" method="get" name="form login " id="signin-form" action="">
+    <!--title form-->
+    <div class="form-signin-title text-center">Sign in</div>
+    <small class="form-signin-text-decs  text-center">Hello! Sign in with your username or email</small>
+    <!--end title form-->
+    <!--username-->
+    <div class="form-group ">
+      <input type="text" class="form-signin-input form-control" id="txtName" name="name" placeholder="Username"
+             [(ngModel)]="userName" (keyup)="showInfor()">
+    </div>
+    <!--end username-->
+    <!--password-->
+    <div class="form-group ">
+      <input type="password" class="form-signin-input form-control form-control-danger" id="txtPassword" name="password"
+             placeholder="Password" [(ngModel)]="passWord" (keyup)="showInfor()">
+    </div>
+    <!--end password-->
+    <!--check-box-->
+    <div class="form-check form-signin-checkbox text-left">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input bg-transparent " name="remmember" id="checkboxSuccess" value="1">
+        Remember me
+      </label>
+    </div>
+    <!--End Check-box-->
+    <button class="form-signin-submit-btn btn w-100">SIGN IN</button>
+    <!--form footer-->
+    <div class="form-signin-footer text-center">
+      <small class="">Copyright by</small>
+      <img src="./../../../assets/images/Tran_images/form-signin-copywriter.png" alt="">
+    </div>
+    <!--end form-footer-->
+  </form>
+</div>
+<!--<div class="text"> binding userName : {{userName}}</div>-->
+<!--<div class="text"> binding passWord : {{passWord}}</div>-->

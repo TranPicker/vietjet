@@ -1,0 +1,22 @@
+.list-session-detail {
+  background-color: white; }
+.list-session-detail .table {
+  width: 100%;
+  margin: auto; }
+.list-session-detail .table thead tr th {
+  border: 1px solid #ecf0f6; }
+.list-session-detail .table tbody tr td {
+  font-size: 18px;
+  border: 1px solid #ecf0f6; }
+.list-session-detail .table tbody tr .btn-active {
+  color: #ed1e24;
+  border: 1px solid #ed1e24; }
+.list-session-detail .table tbody tr .btn-active:hover {
+  color: #ffdf00;
+  background: #ed1e24; }
+.list-session-detail .table tbody tr:nth-child(even) {
+  background: #f6f6f6; }
+.list-session-detail .table tbody tr:hover {
+  background: #ffdf00; }
+
+/*# sourceMappingURL=page_list_session.css.map */

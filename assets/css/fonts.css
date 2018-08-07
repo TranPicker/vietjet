@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Jambono';
+    src: url('./../fonts/Jambono-Black.eot');
+    src: url('./../fonts/Jambono-Black.eot?#iefix') format('embedded-opentype'), url('./../fonts/Jambono-Black.woff2') format('woff2'), url('./../fonts/Jambono-Black.woff') format('woff'), url('./../fonts/Jambono-Black.ttf') format('truetype'), url('./../fonts/Jambono-Black.svg#./../fonts/Jambono-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jambono';
+    src: url('./../fonts/Jambono-Medium.eot');
+    src: url('./../fonts/Jambono-Medium.eot?#iefix') format('embedded-opentype'), url('./../fonts/Jambono-Medium.woff2') format('woff2'), url('./../fonts/Jambono-Medium.woff') format('woff'), url('./../fonts/Jambono-Medium.ttf') format('truetype'), url('./../fonts/Jambono-Medium.svg#./../fonts/Jambono-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
