@@ -1,0 +1,330 @@
+{
+  "import-list": [
+    {
+      "id" : "VietJet01",
+      "cityPair": "SGN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "05-Now-2017",
+      "travelFrom": "01-Now-2017",
+      "travelTo": "05-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet02",
+      "cityPair": "SGN-DAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "06-Now-2017",
+      "travelFrom": "02-Now-2017",
+      "travelTo": "05-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet03",
+      "cityPair": "SGN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "03-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "travelFrom": "03-Now-2017",
+      "travelTo": "08-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet04",
+      "cityPair": "SGN-DAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "travelFrom": "01-Now-2017",
+      "travelTo": "08-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet05",
+      "cityPair": "DAN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "09-Now-2017",
+      "travelFrom": "02-Now-2017",
+      "travelTo": "09-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet06",
+      "cityPair": "SGN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "03-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "travelFrom": "03-Now-2017",
+      "travelTo": "08-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet07",
+      "cityPair": "DAN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "05-Now-2017",
+      "travelFrom": "01-Now-2017",
+      "travelTo": "05-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet08",
+      "cityPair": "SGN-DAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "03-Now-2017",
+      "onSaleTo": "07-Now-2017",
+      "travelFrom": "03-Now-2017",
+      "travelTo": "07-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet09",
+      "cityPair": "DAN-HAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "05-Now-2017",
+      "travelFrom": "01-Now-2017",
+      "travelTo": "05-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    },
+    {
+      "id" : "VietJet10",
+      "cityPair": "SGN-DAN",
+      "fareClass": "L-Eco",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "07-Now-2017",
+      "travelFrom": "02-Now-2017",
+      "travelTo": "07-Now-2017",
+      "base": "2.000.000",
+      "usd" : "112",
+      "jyp" : "Default",
+      "khr" : "Default"
+    }
+  ],
+  "list-session": [
+    {
+      "createtor": 1,
+      "date": "01-now-2018",
+      "status": "Ready",
+      "cityPair": "SGN-EAN"
+    },
+    {
+      "createtor": 2,
+      "date": "01-now-2018",
+      "status": "Not Ready",
+      "cityPair": "HAN-HCM"
+    },
+    {
+      "createtor": 3,
+      "date": "01-now-2018",
+      "status": "Not Ready",
+      "cityPair": "SGN-EAN"
+    },
+    {
+      "createtor": 4,
+      "date": "01-now-2018",
+      "status": "Ready",
+      "cityPair": "HAN-HCM"
+    },
+    {
+      "createtor": 5,
+      "date": "01-now-2018",
+      "status": "Processing",
+      "cityPair": "SGN-EAN"
+    },
+    {
+      "createtor": 6,
+      "date": "01-now-2018",
+      "status": "Processing",
+      "cityPair": "SGN-EAN"
+    },
+    {
+      "createtor": 7,
+      "date": "01-now-2018",
+      "status": "Ready",
+      "cityPair": "SGN-EAN"
+    },
+    {
+      "createtor": 8,
+      "date": "01-now-2018",
+      "status": "Ready",
+      "cityPair": "HAN-HCM"
+    },
+    {
+      "createtor": 9,
+      "date": "01-now-2018",
+      "status": "Not Ready",
+      "cityPair": "SGN-EAN"
+    }
+
+  ],
+  "result-list": [
+    {
+      "id": "VietJet01",
+      "cityPair": "SGN-HAN",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "05-Now-2017",
+      "currency": "2.000.000",
+      "result": "45678",
+      "notes": ""
+    },
+    {
+      "id": "VietJet02",
+      "cityPair": "SGN-DAN",
+      "onSaleFrom": "04-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "currency": "2.000.000",
+      "result": "Processing...",
+      "notes": "Done"
+    },
+    {
+      "id": "VietJet03",
+      "cityPair": "SGN-HAN",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "05-Now-2017",
+      "currency": "2.000.000",
+      "result": "45678",
+      "notes": "Done"
+    },
+    {
+      "id": "VietJet04",
+      "cityPair": "SGN-DAN",
+      "onSaleFrom": "03-Now-2017",
+      "onSaleTo": "06-Now-2017",
+      "currency": "2.000.000",
+      "result": "Processing...",
+      "notes": ""
+    },
+    {
+      "id": "VietJet05",
+      "cityPair": "SGN-HAN",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "currency": "2.000.000",
+      "result": "45678",
+      "notes": ""
+    },
+    {
+      "id": "VietJet06",
+      "cityPair": "SGN-DAN",
+      "onSaleFrom": "01-Now-2017",
+      "onSaleTo": "09-Now-2017",
+      "currency": "2.000.000",
+      "result": "Processing...",
+      "notes": "Done"
+    },
+    {
+      "id": "VietJet07",
+      "cityPair": "SGN-HAN",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "07-Now-2017",
+      "currency": "2.000.000",
+      "result": "45678",
+      "notes": ""
+    },
+    {
+      "id": "VietJet08",
+      "cityPair": "SGN-LAN",
+      "onSaleFrom": "02-Now-2017",
+      "onSaleTo": "08-Now-2017",
+      "currency": "2.000.000",
+      "result": "Processing...",
+      "notes": "Done"
+    },
+    {
+      "id": "VietJet09",
+      "cityPair": "SGN-BID",
+      "onSaleFrom": "03-Now-2017",
+      "onSaleTo": "23-Now-2017",
+      "currency": "2.000.000",
+      "result": "Processing...",
+      "notes": ""
+    }
+  ],
+  "session-detail": [
+    {
+      "id"        : "VietJet01",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "01-now-2017",
+      "onSaleTo"  : "05-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "456789",
+      "notes"     : "Done"
+    },
+    {
+      "id"        : "VietJet02",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "01-now-2017",
+      "onSaleTo"  : "06-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "Processing...",
+      "notes"     : ""
+    },
+    {
+      "id"        : "VietJet03",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "02-now-2017",
+      "onSaleTo"  : "07-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "Processing...",
+      "notes"     : ""
+    },
+    {
+      "id"        : "VietJet04",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "04-now-2017",
+      "onSaleTo"  : "08-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "Processing...",
+      "notes"     : "Done"
+    },
+    {
+      "id"        : "VietJet05",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "02-now-2017",
+      "onSaleTo"  : "09-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "Processing...",
+      "notes"     : ""
+    },
+    {
+      "id"        : "VietJet06",
+      "cityPair"  : "SGN-HAN",
+      "onSaleFrom": "05-now-2017",
+      "onSaleTo"  : "10-Now-2017",
+      "currency"  : "2.000.000",
+      "result"    : "Processing...",
+      "notes"     : "Done"
+    }
+  ]
+}
