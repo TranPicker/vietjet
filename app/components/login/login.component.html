@@ -6,32 +6,37 @@
       <img src="./../../../assets/images/Tran_images/form-signin-introduce.png" alt="">
     </h3>
   </div>
-  <form class="form text-left" method="get" name="form login " id="signin-form" action="">
+  <form class="form text-left" method="get" name="form login " id="signin-form" #formLogin="ngForm">
     <!--title form-->
     <div class="form-signin-title text-center">Sign in</div>
     <small class="form-signin-text-decs  text-center">Hello! Sign in with your username or email</small>
     <!--end title form-->
     <!--username-->
     <div class="form-group ">
-      <input type="text" class="form-signin-input form-control" id="txtName" name="name" placeholder="Username"
-             [(ngModel)]="userName" (keyup)="showInfor()">
+      <input type="text" class="form-signin-input form-control" id="txtName" name="txtName" placeholder="Username" [(ngModel)]="user.userName" required minlength="4" #txtName="ngModel">
+       <div *ngIf="txtName.invalid && (txtName.dirty || txtName.touched)">
+         <div *ngIf="txtName.errors.required" class="text-danger"> Name is required.</div>
+         <div *ngIf="txtName.errors.minlength" class="text-danger">UserName must be at least 4 characters long.</div>
+       </div>
     </div>
     <!--end username-->
     <!--password-->
     <div class="form-group ">
-      <input type="password" class="form-signin-input form-control form-control-danger" id="txtPassword" name="password"
-             placeholder="Password" [(ngModel)]="passWord" (keyup)="showInfor()">
+      <input type="password" class="form-signin-input form-control form-control-danger" id="txtPassword" name="password" placeholder="Password" [(ngModel)]="user.passWord" required #txtPassword="ngModel">
+       <div *ngIf="txtPassword.invalid && (txtPassword.dirty || txtPassword.touched)">
+          <div *ngIf="txtPassword.errors.required" class="text-danger"> Password is required.</div>
+       </div>
     </div>
     <!--end password-->
     <!--check-box-->
     <div class="form-check form-signin-checkbox text-left">
       <label class="form-check-label">
-        <input type="checkbox" class="form-check-input bg-transparent " name="remmember" id="checkboxSuccess" value="1">
+        <input type="checkbox" class="form-check-input bg-transparent " name="remmember" id="checkboxSuccess">
         Remember me
       </label>
     </div>
     <!--End Check-box-->
-    <button class="form-signin-submit-btn btn w-100">SIGN IN</button>
+    <button class="form-signin-submit-btn btn w-100" (click)="loginUser(txtPassword)" [disabled]="formLogin.invalid" >SIGN IN</button>
     <!--form footer-->
     <div class="form-signin-footer text-center">
       <small class="">Copyright by</small>

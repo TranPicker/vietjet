@@ -8,65 +8,65 @@ select:active {
   background: white;
   width: 1180px;
   margin: auto; }
-#form-export .field-select {
-  width: 420px;
-  position: relative; }
-#form-export .field-select .form--select {
-  position: absolute;
-  top: 0px;
-  bottom: 0px; }
-#form-export .field-select .form--select option {
-  border: 0px solid #fff; }
-#form-export .row .form-check-label {
-  color: #a2a2a2; }
-#form-export .row .prettydropdown .selected {
-  color: #a2a2a2; }
-#form-export .row .form--select {
-  width: 420px;
-  border: 2px solid #80808040;
-  outline-style: none;
-  box-shadow: none;
-  -moz-appearance: none;
-  -ms-progress-appearance: none;
-  -webkit-appearance: none; }
-#form-export .row .form--select::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #a2a2a2;
-  opacity: 1;
-  /* Firefox */ }
-#form-export .row .form--select::-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #a2a2a2; }
-#form-export .row .form--select::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #a2a2a2; }
-#form-export .row .form--right .col-form-label {
-  transform: translateX(-15px); }
-#form-export .row .form--right input[type=text] {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-#form-export .row-2 .form--right {
-  margin-bottom: 0px; }
-#form-export .form--datepicker {
-  border: 2px solid #a2a2a2 !important;
-  background: url("./../../../images/Tran_images/form-export-datepicker-icon.png") no-repeat;
-  background-position: 94% 50%;
-  cursor: pointer; }
-#form-export .button-submit .btn {
-  font-size: 28px;
-  margin: auto;
-  padding: 10px 70px;
-  border-radius: 50px;
-  margin-top: 50px;
-  background: #ed1e24;
-  color: #ffffff;
-  font-family: "Jambono";
-  font-weight: 500; }
-#form-export .button-submit .btn:hover {
-  background: #cc1a1f; }
-#form-export .button-submit .btn img {
-  margin-right: 14px; }
+  #form-export .field-select {
+    width: 420px;
+    position: relative; }
+    #form-export .field-select .form--select {
+      position: absolute;
+      top: 0px;
+      bottom: 0px; }
+      #form-export .field-select .form--select option {
+        border: 0px solid #fff; }
+  #form-export .row .form-check-label {
+    color: #a2a2a2; }
+  #form-export .row .prettydropdown .selected {
+    color: #a2a2a2; }
+  #form-export .row .form--select {
+    width: 420px;
+    border: 2px solid #80808040;
+    outline-style: none;
+    box-shadow: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none; }
+    #form-export .row .form--select::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a2a2a2;
+      opacity: 1;
+      /* Firefox */ }
+    #form-export .row .form--select::-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #a2a2a2; }
+    #form-export .row .form--select::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #a2a2a2; }
+  #form-export .row .form--right .col-form-label {
+    transform: translateX(-15px); }
+  #form-export .row .form--right input[type=text] {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  #form-export .row-2 .form--right {
+    margin-bottom: 0px; }
+  #form-export .form--datepicker {
+    border: 2px solid #a2a2a2 !important;
+    background: url("./../../../images/Tran_images/form-export-datepicker-icon.png") no-repeat;
+    background-position: 94% 50%;
+    cursor: pointer; }
+  #form-export .button-submit .btn {
+    font-size: 28px;
+    margin: auto;
+    padding: 10px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+    background: #ed1e24;
+    color: #ffffff;
+    font-family: "Jambono";
+    font-weight: 500; }
+    #form-export .button-submit .btn:hover {
+      background: #cc1a1f; }
+    #form-export .button-submit .btn img {
+      margin-right: 14px; }
 
 #form-export .form--datepicker.border-red {
   border: 2px solid #ed1e24 !important; }

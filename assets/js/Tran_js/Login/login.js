@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('.error').addClass('text-danger');
   $('#signin-form').validate({
     debug: true,
     rules: {
@@ -11,7 +12,6 @@ $(document).ready(function () {
     }
   });
   $('.form-signin-submit-btn').click(function () {
-    console.log('jquery is running');
     $('#signin-form').submit();
   });
 });

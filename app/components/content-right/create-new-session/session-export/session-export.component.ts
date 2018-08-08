@@ -1,5 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import './../../../../../assets/js/Tran_js/page_create_new_session_export/page_create_new_session_export.js';
+import {Export} from '../../../../Models/export/export';
 
 declare var jquery: any;
 declare var $: any;
@@ -10,30 +11,34 @@ declare var $: any;
   styleUrls: ['./session-export.component.css']
 })
 export class SessionExportComponent implements OnInit, OnDestroy {
-  cityPare = '';
-  onSale = '';
-  fromDate = '';
-  routTrip = '';
-  toDate = '';
+  public data: Export = new Export();
 
   constructor() {
   }
 
   sendInfor() {
-    console.log('Thông Tin Đã Được Gửi Đi');
-    console.log('City Pair: ' + this.cityPare);
-    console.log('On Sale; ' + this.onSale);
-    console.log('from Date: ' + this.fromDate);
-    console.log('Rout Trip: ' + this.routTrip);
-    console.log('To Date: ' + this.toDate);
+  }
+
+  showData() {
+    console.log('show data is working!');
+    console.log('Type Trip:' + this.data.typeTrip);
+    console.log('City Pair:' + this.data.cityPair);
+    console.log('OnSale:' + this.data.onSale);
+    console.log('From Date:' + this.data.fromDate);
+    console.log('rout Trip:' + this.data.routTrip);
+    console.log('To date:' + this.data.toDate);
+
   }
 
   ngOnInit() {
-    console.log('NgOnInit is working!');
+
+
     // Reload jquery
     // Initiate Pretty Dropdowns
     $(document).ready(function () {
+      // jquery for pretty dropdown
       $('.pretty').prettyDropdown();
+
       $('.form--right .prettydropdown.arrow').addClass('col-9');
       $('.form--datepicker').datepicker({
         dateFormat: 'dd.mm.yy'
@@ -48,6 +53,7 @@ export class SessionExportComponent implements OnInit, OnDestroy {
         $('.form--datepicker').removeClass('border-red');
       });
     });
+
   }
 
   ngOnDestroy() {

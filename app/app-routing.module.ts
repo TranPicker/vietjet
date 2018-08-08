@@ -11,13 +11,15 @@ import {ListSessionComponent} from './components/content-right/list-session/list
 import {PagenotfoundComponent} from './components/pagenotfound/pagenotfound.component';
 import {CreateNewSessionComponent} from './components/content-right/create-new-session/create-new-session.component';
 import { SessionDetailComponent } from './components/content-right/session-detail/session-detail.component';
+import {LoginComponent} from './components/login/login.component';
 
 
 const routerConfig: Routes = [
-  {path: '', redirectTo: 'list-session', pathMatch: 'full'},            // => Default loading page
+  {path: '', redirectTo: 'new-session/session-export', pathMatch: 'full'},            // => Default loading page
   {path: 'create-revervation', component: RevervationComponent},
   {path: 'list-session', component: ListSessionComponent},
   {path: 'list-session/:id', component: SessionDetailComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'new-session', component: CreateNewSessionComponent,
     children: [                          // child components declared here
       {

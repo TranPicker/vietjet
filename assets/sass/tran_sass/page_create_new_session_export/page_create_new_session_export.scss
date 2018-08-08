@@ -197,4 +197,5 @@ prettydropdown.arrow > ul.active > li.selected:after {
 input[type=checkbox] {
     zoom: 2;
     position: unset;
+   transform: translateY(4px);
 }

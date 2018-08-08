@@ -228,3 +228,6 @@ footer {
 .appComponent[_ngcontent-c0] {
   text-align: unset!important;
 }
+label#txtPassword-error,label#txtName-error{
+  color: #ed1e24!important;
+}

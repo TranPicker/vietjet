@@ -52,7 +52,7 @@ import { SortNumberPipe } from './pipes/sort/sort-number.pipe';
     MessagesComponent,
     SessionDetailComponent,
     FilterPipe,
-    SortNumberPipe
+    SortNumberPipe,
   ],
   imports: [
     BrowserModule,

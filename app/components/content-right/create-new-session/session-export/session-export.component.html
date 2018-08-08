@@ -2,19 +2,19 @@
 <!--end bread scrumb-->
 <div class="main-content p-5 m-5">
   <!--Form Export-->
-  <form id="form-export" method="GET" name="form-export">
+  <form id="form-export" name="form-export">
     <div class="container-fluid">
       <!--row 1-->
       <div class="row row-1">
         <div class="col-sm-6 form--left">
           <!--Field type-->
           <div class="field-select">
-            <select id="typeTrip" name="typeTrip" class="pretty">
-              <option value="international" title="">International</option>
-              <option value="domestic" title="" selected>Domestic</option>
-              <option value="other1" title="">other 1</option>
-              <option value="other2" title="">other 2</option>
-              <option value="other3" title="">other 3</option>
+            <select id="typeTrip" name="typeTrip" class="pretty" [(ngModel)]="data.typeTrip">
+              <option value="international" >International</option>
+              <option value="domestic" selected>Domestic</option>
+              <option value="other1" >other 1</option>
+              <option value="other2" >other 2</option>
+              <option value="other3" >other 3</option>
             </select>
           </div>
           <!-- End field type-->
@@ -22,7 +22,7 @@
         <div class="col-sm-6 form-group row form--right">
           <!--file sale-->
           <label for="city" class="col-3 col-form-label">City Pair</label>
-          <select id="sort" name="cityPare" [(ngModel)]="cityPare" class="pretty col-9 form--select" #select >
+          <select id="sort" name="cityPare" [(ngModel)]="cityPare" class="pretty col-9 form--select" [(ngModel)]="data.cityPair" >
             <option value="item1" selected>item 1</option>
             <option value="item2">item 2</option>
             <option value="item3">item 3</option>
@@ -35,17 +35,17 @@
       <div class="row row-2 my-5">
         <div class="col-sm-6 form--left">
           <!--Field type-->
-          <select id="typeTrip" name="onSale" [(ngModel)]="onSale"  class="pretty" >
-            <option value="international" title="" selected>onsale</option>
-            <option value="domestic" title="">iem 1</option>
-            <option value="other1" title="">item 2</option>
+          <select id="onSale" name="onSale" [(ngModel)]="onSale"  class="pretty" [(ngModel)]="data.onSale">
+            <option value="international"  selected>onsale</option>
+            <option value="domestic" >iem 1</option>
+            <option value="other1" >item 2</option>
           </select>
           <!-- End field type-->
         </div>
         <div class="col-sm-6   form-group row form--right">
           <!--file sale-->
           <label for="city" class="col-3 col-form-label">From Date</label>
-          <input type="text" class="col-9 form--select form--datepicker text-muted" name="fromDate" [(ngModel)]="fromDate"  placeholder="01.01.2018" value="">
+          <input type="text" class="col-9 form--select form--datepicker text-muted" name="fromDate" [(ngModel)]="data.fromDate"  placeholder="01.01.2018" value="">
           <!--end field sale-->
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="form-group">
             <div class="form-check">
               <label class="form-check-label d-flex m-0 align-items-center">
-                <input type="checkbox" class="form-check-input mr-2" name="routTrip" [(ngModel)]="routTrip"  id="" > Rout Trip
+                <input type="checkbox" class="form-check-input mr-2" name="routTrip" [(ngModel)]="data.routTrip"  id="" > Rout Trip
               </label>
             </div>
           </div>
@@ -66,14 +66,14 @@
         <div class="col-sm-6 form--right row form-group">
           <!--file -->
           <label for="city" class="col-3 col-form-label">To Date</label>
-          <input type="text" class="col-9 form--select form--datepicker text-muted" name="toDate" [(ngModel)]="toDate"  placeholder="01.01.2018" value="">
+          <input type="text" class="col-9 form--select form--datepicker text-muted" name="toDate" [(ngModel)]="data.toDate"  placeholder="01.01.2018" value="">
           <!--end field -->
         </div>
       </div>
 
       <!--end row 3-->
       <div class="row button-submit text-center">
-        <button type="submit" class="btn" (click)="sendInfor()">
+        <button class="btn" (click)="showData()">
           <img src="../../../../../../assets/images/Tran_images/export-icon.png" alt="" >Export
         </button>
       </div>

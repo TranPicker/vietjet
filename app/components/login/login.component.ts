@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import  './../../../assets/js/Tran_js/Login/login.js';
+// import './../../../assets/js/Tran_js/Login/login.js';
+// import model
+import {Login} from '../../Models/login/login';
+import {LoginService} from '../../service/login/login.service';
 
 declare var jquery: any;
 declare var $: any;
@@ -10,15 +13,21 @@ declare var $: any;
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  public userName: string = '';
-  public passWord: string = '';
+  user: Login = new Login();
 
-  constructor() {
+  constructor(private loginService: LoginService) {
   }
 
-  showInfor(event) {
-    console.log(this.userName +"----"+ this.passWord);
+  loginUser(setPassword) {
+    console.log(this.loginService.checkLogin(this.user.userName, this.user.passWord, this.user.remember));
+    setPassword.reset();
   }
+
+  logOut() {
+    this.loginService.logOut();
+  }
+
   ngOnInit() {
+    $('.error').addClass('text-danger');
   }
 }
