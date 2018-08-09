@@ -1,7 +1,7 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import './../../../../../assets/js/Tran_js/page_create_new_session_export/page_create_new_session_export.js';
-import {Export} from '../../../../Models/export/export';
-import {ExportService} from '../../../../service/export/export.service';
+import './../../../../../../assets/js/Tran_js/page_create_new_session_export/page_create_new_session_export.js';
+import {Export} from '../../../../../Models/export/export';
+import {ExportService} from '../../../../../service/export/export.service';
 
 declare var jquery: any;
 declare var $: any;

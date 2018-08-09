@@ -1,10 +1,10 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 // Model
-import {Listsession} from '../../../Models/listsession/listsession';
+import {Listsession} from '../../../../Models/listsession/listsession';
 import {Subject} from 'rxjs';
 import {Subscription} from 'rxjs';
 // Service
-import {ListsessionService} from '../../../service/listsession/listsession.service';
+import {ListsessionService} from '../../../../service/listsession/listsession.service';
 
 @Component({
   selector: 'app-list-session',
@@ -34,6 +34,7 @@ export class ListSessionComponent implements OnInit, OnDestroy {
       this.dtTrigger.next();
     });
   }
+
 
   ngOnDestroy() {
     this.subscription.unsubscribe();

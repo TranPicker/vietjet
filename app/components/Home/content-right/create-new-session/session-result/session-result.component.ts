@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ResultService} from '../../../../service/result/result.service';
-import {Result} from '../../../../Models/result/result';
+import {ResultService} from '../../../../../service/result/result.service';
+import {Result} from '../../../../../Models/result/result';
 import {Observable} from 'rxjs';
 
 @Component({

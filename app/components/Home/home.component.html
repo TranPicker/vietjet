@@ -1,0 +1,19 @@
+<div class="appComponent">
+ <app-header></app-header>
+  <div class="content">
+    <!--navbar left-->
+   <app-navbar-left></app-navbar-left>
+    <!--end nav bar left-->
+    <!--content right-->
+    <div class="content_right rounded" id="main">
+      <div class="tab-content">
+        <div class="tab-pane active show">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <!--end content right-->
+  </div>
+<app-footer></app-footer>
+</div>
+

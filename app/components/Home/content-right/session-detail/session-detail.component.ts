@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {Location} from '@angular/common';
 // service and Class
-import {SessionDetail} from '../../../Models/session-detail/session-detail';
-import {SessionDetailService} from '../../../service/sessiondetail/session-detail.service';
+import {SessionDetail} from '../../../../Models/session-detail/session-detail';
+import {SessionDetailService} from '../../../../service/sessiondetail/session-detail.service';
 import {ActivatedRoute} from '@angular/router';
 
 
@@ -14,7 +15,11 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class SessionDetailComponent implements OnInit {
 
-  constructor(private http: HttpClient, public sessionDetail: SessionDetailService, private activeRoute: ActivatedRoute) {
+  constructor(private http: HttpClient,
+              public sessionDetail: SessionDetailService,
+              private activeRoute: ActivatedRoute,
+              private location: Location
+  ) {
   }
 
 // lay id on url bang ActivateRoute
@@ -30,6 +35,10 @@ export class SessionDetailComponent implements OnInit {
       this.datas = datas;
     });
 
+  }
+
+  goBack() {
+    this.location.back();
   }
 
   ngOnInit() {
