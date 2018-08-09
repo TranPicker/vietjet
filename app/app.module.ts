@@ -29,6 +29,7 @@ import { SessionDetailComponent } from './components/content-right/session-detai
 // import pipes
 import { FilterPipe } from './pipes/filter/filter.pipe';
 import { SortNumberPipe } from './pipes/sort/sort-number.pipe';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -53,6 +54,7 @@ import { SortNumberPipe } from './pipes/sort/sort-number.pipe';
     SessionDetailComponent,
     FilterPipe,
     SortNumberPipe,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

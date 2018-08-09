@@ -18,13 +18,14 @@ export class SessionDetailComponent implements OnInit {
   }
 
 // lay id on url bang ActivateRoute
-  id = +this.activeRoute.snapshot.url[1].path;
+  id = +this.activeRoute.snapshot.paramMap.get('id');
 
   private datas: SessionDetail[];
 
   getSessionDetail() {
     const _id = this.id;
-    console.log(_id);
+    console.log(this.activeRoute.snapshot.paramMap.get('id'));
+    console.log(typeof _id);
     this.sessionDetail.getSessionDetail(_id).subscribe((datas) => {
       this.datas = datas;
     });

@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 // import './../../../assets/js/Tran_js/Login/login.js';
 // import model
-import {Login} from '../../Models/login/login';
+import {User} from '../../Models/login/user';
 import {LoginService} from '../../service/login/login.service';
 
-declare var jquery: any;
+declare var jquery: any;  // declare cho thu vien ben ngoai
 declare var $: any;
 
 @Component({
@@ -13,7 +13,7 @@ declare var $: any;
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  user: Login = new Login();
+  user: User = new User();
 
   constructor(private loginService: LoginService) {
   }

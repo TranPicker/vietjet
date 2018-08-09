@@ -2,6 +2,7 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 // Model
 import {Listsession} from '../../../Models/listsession/listsession';
 import {Subject} from 'rxjs';
+import {Subscription} from 'rxjs';
 // Service
 import {ListsessionService} from '../../../service/listsession/listsession.service';
 
@@ -12,6 +13,7 @@ import {ListsessionService} from '../../../service/listsession/listsession.servi
 })
 export class ListSessionComponent implements OnInit, OnDestroy {
   private datas: Listsession[];
+  private subscription: Subscription;
   oneSession: Listsession;
   dtOptions: DataTables.Settings = {};
   dtTrigger: Subject<any> = new Subject<any>();
@@ -27,13 +29,15 @@ export class ListSessionComponent implements OnInit, OnDestroy {
   }
 
   private getAllSession(): void {
-    this.listSessionService.getAllListSesison().subscribe(datas => {
+    this.subscription = this.listSessionService.getAllListSesison().subscribe(datas => {
       this.datas = datas;
       this.dtTrigger.next();
     });
   }
 
-  ngOnDestroy() {}
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 
   // public getSessionById(id: number) {
   //   console.log('Get Session By Id');

@@ -15,4 +15,7 @@ export class Export {
   //   this.toDate = new Date();
   // }
 
+  constructor() {
+    this.routTrip = false;
+  }
 }

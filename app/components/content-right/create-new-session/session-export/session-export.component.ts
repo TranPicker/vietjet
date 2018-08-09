@@ -1,6 +1,7 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import './../../../../../assets/js/Tran_js/page_create_new_session_export/page_create_new_session_export.js';
 import {Export} from '../../../../Models/export/export';
+import {ExportService} from '../../../../service/export/export.service';
 
 declare var jquery: any;
 declare var $: any;
@@ -13,15 +14,22 @@ declare var $: any;
 export class SessionExportComponent implements OnInit, OnDestroy {
   public data: Export = new Export();
 
-  constructor() {
+  constructor(private exportService: ExportService) {
   }
 
-  sendInfor() {
-  }
+  addNewExport() {
+    this.data.typeTrip = $('#prettydropdown-typeTrip ul li:first-child').attr('data-value');
+    this.data.cityPair = $('#prettydropdown-cityPare ul li:first-child').attr('data-value');
+    this.data.onSale = $('#prettydropdown-onSale ul li:first-child').attr('data-value');
+    this.data.fromDate = $('.form--datepicker#from-date').datepicker('getDate');
+    this.data.toDate = $('.form--datepicker#to-date').datepicker('getDate');
 
-  showData() {
-    console.log('show data is working!');
-    console.log('Type Trip:' + this.data.typeTrip);
+
+    this.exportService.addExport(this.data).subscribe(res => {
+      console.log(res);
+    });
+
+    console.log('City Pair:' + this.data.typeTrip);
     console.log('City Pair:' + this.data.cityPair);
     console.log('OnSale:' + this.data.onSale);
     console.log('From Date:' + this.data.fromDate);
@@ -31,8 +39,6 @@ export class SessionExportComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-
-
     // Reload jquery
     // Initiate Pretty Dropdowns
     $(document).ready(function () {

@@ -35,17 +35,17 @@
       <div class="row row-2 my-5">
         <div class="col-sm-6 form--left">
           <!--Field type-->
-          <select id="onSale" name="onSale" [(ngModel)]="onSale"  class="pretty" [(ngModel)]="data.onSale">
-            <option value="international"  selected>onsale</option>
-            <option value="domestic" >iem 1</option>
-            <option value="other1" >item 2</option>
+          <select id="onSale" name="onSale"  class="pretty" >
+            <option value="onsale 1"  selected>onsale 1</option>
+            <option value="onsale 2" >onsale 2</option>
+            <option value="onsale 3" >onsale 3</option>
           </select>
           <!-- End field type-->
         </div>
         <div class="col-sm-6   form-group row form--right">
           <!--file sale-->
           <label for="city" class="col-3 col-form-label">From Date</label>
-          <input type="text" class="col-9 form--select form--datepicker text-muted" name="fromDate" [(ngModel)]="data.fromDate"  placeholder="01.01.2018" value="">
+          <input type="text" class="col-9 form--select form--datepicker text-muted" name="fromDate" id="from-date"  placeholder="01.01.2018" value="">
           <!--end field sale-->
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="form-group">
             <div class="form-check">
               <label class="form-check-label d-flex m-0 align-items-center">
-                <input type="checkbox" class="form-check-input mr-2" name="routTrip" [(ngModel)]="data.routTrip"  id="" > Rout Trip
+                <input type="checkbox" class="form-check-input mr-2" name="routTrip" [(ngModel)]="data.routTrip"> Rout Trip
               </label>
             </div>
           </div>
@@ -66,14 +66,14 @@
         <div class="col-sm-6 form--right row form-group">
           <!--file -->
           <label for="city" class="col-3 col-form-label">To Date</label>
-          <input type="text" class="col-9 form--select form--datepicker text-muted" name="toDate" [(ngModel)]="data.toDate"  placeholder="01.01.2018" value="">
+          <input type="text" class="col-9 form--select form--datepicker text-muted" name="toDate" id="to-date"  placeholder="01.01.2018">
           <!--end field -->
         </div>
       </div>
 
       <!--end row 3-->
       <div class="row button-submit text-center">
-        <button class="btn" (click)="showData()">
+        <button class="btn" (click)="addNewExport()">
           <img src="../../../../../../assets/images/Tran_images/export-icon.png" alt="" >Export
         </button>
       </div>
