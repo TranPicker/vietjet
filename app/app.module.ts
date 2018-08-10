@@ -4,6 +4,8 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import { DataTablesModule } from 'angular-datatables';
 import { AppRoutingModule } from './/app-routing.module';
+// Guard
+
 // service
 import {MessageService} from './service/message/message.service';
 import {ListsessionService} from './service/listsession/listsession.service';
@@ -26,11 +28,12 @@ import {BreadCrumbNewSessionComponent} from './components/Home/content-right/bre
 import {CreateNewSessionComponent} from './components/Home/content-right/create-new-session/create-new-session.component';
 import { MessagesComponent } from './components/Home/messages/messages.component';
 import { SessionDetailComponent } from './components/Home/content-right/session-detail/session-detail.component';
+import { HomeComponent } from './components/Home/home.component';
 // import pipes
 import { FilterPipe } from './pipes/filter/filter.pipe';
 import { SortNumberPipe } from './pipes/sort/sort-number.pipe';
 import { RegisterComponent } from './components/register/register.component';
-import { HomeComponent } from './components/Home/home.component';
+
 
 
 

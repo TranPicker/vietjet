@@ -26,7 +26,6 @@ export class ListsessionService {
 
   getSessionById(id: number): Observable<Listsession> {
     const urlId = `${this.apiUrl}/${id}`;
-    console.log(urlId);
     return this.http.get<Listsession>(urlId).pipe(tap(selectSession => console.log(`get List Session`)));
   }
 }

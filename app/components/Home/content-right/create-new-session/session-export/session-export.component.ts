@@ -2,6 +2,7 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 import './../../../../../../assets/js/Tran_js/page_create_new_session_export/page_create_new_session_export.js';
 import {Export} from '../../../../../Models/export/export';
 import {ExportService} from '../../../../../service/export/export.service';
+import {Router} from '@angular/router';
 
 declare var jquery: any;
 declare var $: any;
@@ -14,7 +15,7 @@ declare var $: any;
 export class SessionExportComponent implements OnInit, OnDestroy {
   public data: Export = new Export();
 
-  constructor(private exportService: ExportService) {
+  constructor(private exportService: ExportService, private router: Router) {
   }
 
   addNewExport() {
@@ -39,6 +40,10 @@ export class SessionExportComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (localStorage.getItem('currentUser') == null) {
+      this.router.navigate(['login']);
+    }
+
     // Reload jquery
     // Initiate Pretty Dropdowns
     $(document).ready(function () {

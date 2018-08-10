@@ -5,6 +5,7 @@ import {Subject} from 'rxjs';
 import {Subscription} from 'rxjs';
 // Service
 import {ListsessionService} from '../../../../service/listsession/listsession.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list-session',
@@ -18,10 +19,14 @@ export class ListSessionComponent implements OnInit, OnDestroy {
   dtOptions: DataTables.Settings = {};
   dtTrigger: Subject<any> = new Subject<any>();
 
-  constructor(private listSessionService: ListsessionService) {  // => khai bao de su dung service bat buoc tiem vao constructor
+  constructor(private listSessionService: ListsessionService, private router: Router) {  // => khai bao de su dung service bat buoc tiem vao constructor
   }
 
   ngOnInit() {
+    if (localStorage.getItem('currentUser') == null) {
+      this.router.navigate(['login']);
+    }
+
     this.dtOptions = {
       pagingType: 'full_numbers'
     };

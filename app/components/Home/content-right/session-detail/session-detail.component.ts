@@ -5,7 +5,7 @@ import {Location} from '@angular/common';
 // service and Class
 import {SessionDetail} from '../../../../Models/session-detail/session-detail';
 import {SessionDetailService} from '../../../../service/sessiondetail/session-detail.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 
 @Component({
@@ -18,7 +18,8 @@ export class SessionDetailComponent implements OnInit {
   constructor(private http: HttpClient,
               public sessionDetail: SessionDetailService,
               private activeRoute: ActivatedRoute,
-              private location: Location
+              private location: Location,
+              private router: Router
   ) {
   }
 
@@ -42,6 +43,9 @@ export class SessionDetailComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (localStorage.getItem('currentUser') == null) {
+      this.router.navigate(['login']);
+    }
     this.getSessionDetail();
   }
 }
