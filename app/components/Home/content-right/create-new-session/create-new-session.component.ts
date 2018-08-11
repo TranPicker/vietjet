@@ -11,7 +11,7 @@ export class CreateNewSessionComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if (localStorage.getItem('currentUser') == null) {
+    if (!localStorage.getItem('currentUser') && !sessionStorage.getItem('currentUser')) {
       this.router.navigate(['login']);
     }
   }

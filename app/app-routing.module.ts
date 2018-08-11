@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {AuthGuard} from './guard/auth.guard';
 
 // Component
 import {SessionExportComponent} from './components/Home/content-right/create-new-session/session-export/session-export.component';
@@ -14,16 +13,16 @@ import {SessionDetailComponent} from './components/Home/content-right/session-de
 import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
 import {HomeComponent} from './components/Home/home.component';
-
+import {AuthGuard} from './guard/auth.guard';
 
 const routerConfig: Routes = [
   {path: '', redirectTo: 'home', canActivate: [AuthGuard], pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {
-    path: 'home', component: HomeComponent, canActivate: [AuthGuard], children: [
+    path: 'home', component: HomeComponent, children: [
       {path: '', redirectTo: 'list-session', pathMatch: 'full'},
-      {path: 'create-revervation', component: RevervationComponent },
+      {path: 'create-revervation', component: RevervationComponent},
       {path: 'list-session', component: ListSessionComponent},
       {path: 'list-session/:id', component: SessionDetailComponent},
       {
@@ -49,7 +48,8 @@ const routerConfig: Routes = [
       },
       {path: '**', component: PagenotfoundComponent}                         // => Another loading
     ]
-  }
+  },
+  {path: '**', component: PagenotfoundComponent}
 
 
 ];

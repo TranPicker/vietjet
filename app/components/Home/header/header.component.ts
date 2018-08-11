@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 
 declare var jquery: any;
@@ -11,17 +11,16 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
-  // public  toggleIcon()
-  // {
-  //   $('.hamburger').toggleClass("is-active");
-  // }
+  showPopover = true;
+
+  togglePopover() {
+    this.showPopover = !this.showPopover;
+  }
+
   ngOnInit() {
 
-  }
-  logout() {
-    console.log('logout is working!');
-    // localStorage.removeItem('currentUser');
   }
 }

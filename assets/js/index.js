@@ -78,10 +78,9 @@ $(document).ready(function () {
   });
 
   $("[data-toggle=popover]").popover({
-    'placement': 'bottom',
-    'trigger': 'click',
     'html': true,
-    'content': function () {
+    'trigger': 'click',
+    content: function () {
       return $('#popover-content').html();
     }
   });

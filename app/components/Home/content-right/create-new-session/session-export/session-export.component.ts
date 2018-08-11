@@ -40,7 +40,7 @@ export class SessionExportComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    if (localStorage.getItem('currentUser') == null) {
+    if (!localStorage.getItem('currentUser') && !sessionStorage.getItem('currentUser')) {
       this.router.navigate(['login']);
     }
 

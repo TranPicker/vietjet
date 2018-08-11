@@ -5,6 +5,9 @@ import {User} from '../../Models/login/user';
 import {LoginService} from '../../service/login/login.service';
 import {Router} from '@angular/router';
 
+// sweet alert
+import swal from 'sweetalert';
+
 declare var jquery: any;  // declare cho thu vien ben ngoai
 declare var $: any;
 
@@ -16,6 +19,7 @@ declare var $: any;
 export class LoginComponent implements OnInit {
   user: User = new User();
 
+
   constructor(private loginService: LoginService, private router: Router) {
   }
 
@@ -25,23 +29,28 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser(setPassword) {
-    console.log(this.loginService.checkLogin(this.user.userName, this.user.passWord, this.user.remember));
-    if (typeof(Storage) !== 'undefined') {
-      if (1) {
-        window.localStorage.setItem('currentUser', JSON.stringify('29472984729'));
-        this.router.navigate(['home']);
+    this.loginService.checkLogin(this.user.userName, this.user.passWord).subscribe((res) => {
+      // console.log('Token ' + res.token);
+      if (this.user.remember) {
+        localStorage.setItem('currentUser', JSON.stringify(res.token));
       } else {
-        window.sessionStorage.setItem('currentUser', JSON.stringify('826742874293749'));
-        this.router.navigate(['home']);
+        sessionStorage.setItem('currentUser', JSON.stringify(res.token));
       }
-    }
+      // console.log('Current User is: ' + localStorage.getItem('currentUser'));
+
+      this.router.navigate(['home']);
+      swal('Login Success!', 'Welcome to home page!', 'success');
+    }, error1 => {
+      console.log('error: ' + error1);
+      swal('Login Failure!', 'Username or Password wrong!', 'error');
+    });
     setPassword.reset();
-    console.log(localStorage.getItem('currentUser'));
-    this.router.navigate(['home']);
   }
+
 
   logOut() {
     localStorage.removeItem('currentUser');
     console.log('Current User is:' + localStorage.getItem('currentUser'));
   }
 }
+

@@ -16,7 +16,7 @@ export class SessionResultComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (localStorage.getItem('currentUser') == null) {
+    if (!localStorage.getItem('currentUser') && !sessionStorage.getItem('currentUser')) {
       this.router.navigate(['login']);
     }
 

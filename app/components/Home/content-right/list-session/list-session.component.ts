@@ -19,11 +19,10 @@ export class ListSessionComponent implements OnInit, OnDestroy {
   dtOptions: DataTables.Settings = {};
   dtTrigger: Subject<any> = new Subject<any>();
 
-  constructor(private listSessionService: ListsessionService, private router: Router) {  // => khai bao de su dung service bat buoc tiem vao constructor
-  }
+  constructor(private listSessionService: ListsessionService, private router: Router) {}
 
   ngOnInit() {
-    if (localStorage.getItem('currentUser') == null) {
+    if (!localStorage.getItem('currentUser') && !sessionStorage.getItem('currentUser')) {
       this.router.navigate(['login']);
     }
 

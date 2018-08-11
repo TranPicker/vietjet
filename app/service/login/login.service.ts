@@ -1,9 +1,11 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {map} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {ResLogins} from '../../Models/login/resLogin';
 
-const httpOption = {
-  headers: new HttpHeaders({'Content-Type': 'application/jon'})
+
+const httpOptions = {
+  headers: new HttpHeaders({'Content-Type': 'application/jon; charset=utf-8'})
 };
 
 @Injectable({
@@ -12,25 +14,13 @@ const httpOption = {
 export class LoginService {
   private urlCheckLogin: string;
 
+
   constructor(private http: HttpClient) {
-    this.urlCheckLogin = 'path/';
+    this.urlCheckLogin = 'https://vietjet-api.dev-altamedia.com/api/login';
   }
 
-  checkLogin(username, password, remember): any {
-    return this.http.post<any>(this.urlCheckLogin, {username: username, password: password}, httpOption).pipe(
-      map(user => {
-        if (user && user.token) {
-          if (typeof(Storage) !== 'undefined') {
-            if (remember) {
-              window.localStorage.setItem('currentUser', JSON.stringify(user));
-            } else {
-              window.sessionStorage.setItem('currentUser', JSON.stringify(user));
-            }
-          }
-        }
-        return user;
-      })
-    );
+  checkLogin(username, password): Observable<ResLogins> {
+    return this.http.post<ResLogins>(this.urlCheckLogin, {UserName: username, Password: password});
   }
 
   logOut() {
@@ -42,3 +32,4 @@ export class LoginService {
     }
   }
 }
+
